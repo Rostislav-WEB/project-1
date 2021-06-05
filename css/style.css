@@ -94,27 +94,24 @@ body {
 	font-size: 16px;
 	font-weight: 400;
   display: inline-block;
+  transition: all 0.3s linear;
 }
-.menu-link:after {
-  display: block; 
-  content: ""; 
-  height: 3px; 
-  width: 0%; 
-  background-color: #000000; 
-  transition: width 0.4s ease-in-out; 
-}
-.menu-link:hover:after,
-.menu-link:focus:after {
-width: 100%;
+.menu-link:hover {
+  color:red;
 }
 .button {
 	display: inline-block;
   font-size: 16px;
+  transition: 0.3s linear;
 }
 .button-link {
 	color:#111238;
 	padding: 10px;
 	margin-right: 30px;
+  transition: all 0.3s linear;
+}
+.button-link:hover {
+  color:red;
 }
 .button-primary {
 	background-color: #1A75E8;
@@ -123,7 +120,11 @@ width: 100%;
 	padding-right: 30px;
 	padding-bottom: 15px;
 	padding-left: 30px;
-	color: white;;
+	color: white;
+  transition: 0.3s linear;
+}
+.button-primary:hover {
+  background-color: black;
 }
 .button-icon {
   vertical-align: middle;
@@ -256,6 +257,9 @@ width: 100%;
   margin-left: auto;
   margin-right: 25px;
 }
+.more:hover {
+  color:red;
+}
 .subscribe {
   background: #F2F3F6;
 }
@@ -279,7 +283,7 @@ width: 100%;
 }
 .footer {
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 20px;
 }
 .footer-logo {
   margin-bottom: 20px;
@@ -349,20 +353,24 @@ width: 100%;
   .menu-item:not(:last-child) {
     margin-right: 0;
   }
+  .menu-link {
+    margin: 10px;
+  }
   .button-link {
     margin-right: 0;
+    margin: 10px;
   }
   .close-button {
     position: fixed;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 0px;
     font-size: 24px;
     text-align: right;
     padding: 20px;
   }
   .button-close {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
   }
   .button-close img {
     width: 35px;
@@ -381,6 +389,16 @@ width: 100%;
   .hero {
     text-align: center;
   }
+  .menu-button {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  .button-close img {
+    width: 30px;
+    height: 30px;
+  }
+  
   .tags-label {
     display: block;
     margin-bottom: 20px;
